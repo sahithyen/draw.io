@@ -406,6 +406,14 @@
       }
     }
   </script>
+  <script type="text/javascript">
+    // TODO: Find a nicer way to enable the window to close
+    setTimeout(function () {
+      if (window.onbeforeunload) {
+        window.onbeforeunload = null;
+      }
+    }, 100);
+  </script>
 </body>
 
 </html>
